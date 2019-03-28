@@ -393,7 +393,9 @@ class _DatePickerState extends State<_DatePickerComponent> {
         children: <Widget>[
           Container(
             height: theme.titleHeight,
-            child: FlatButton(
+            child: CupertinoButton(
+              pressedOpacity: 0.3,
+              padding: EdgeInsets.only(left: 16, top: 0),
               child: Text(
                 '$cancel',
                 style: theme.cancelStyle,
@@ -403,7 +405,9 @@ class _DatePickerState extends State<_DatePickerComponent> {
           ),
           Container(
             height: theme.titleHeight,
-            child: FlatButton(
+            child: CupertinoButton(
+              pressedOpacity: 0.3,
+              padding: EdgeInsets.only(right: 16, top: 0),
               child: Text(
                 '$done',
                 style: theme.doneStyle,
